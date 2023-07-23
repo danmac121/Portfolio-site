@@ -95,17 +95,18 @@ header{
 .pic1, .pic2, .pic3, .pic4, .pic5{
     margin: 0;
     position: relative;
-    top: -18px;
+    top: -27px;
 }
 /* had to add positioning based off top because the image extends past the div but overflow is hidden. Definitely not the right way to do this but having to add the filter to the images is complicating everything */
 .pre{
     z-index: 1;
     display: inline;
     position: relative;
-    top: 260px;
+    top: 230px;
     padding: 0px;
     margin-top: 0px;
     background-color: #EBAE64;
+    font-size: 24px;
 }
 .h4fix{
     z-index: 1;
@@ -115,6 +116,7 @@ header{
     padding: 0px;
     margin-top: 0px;
     background-color: #EBAE64;
+    font-size: 18px;
 
 }
 
