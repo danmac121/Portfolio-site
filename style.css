@@ -26,26 +26,41 @@ header {
     color: #ffffff;
     height:40px;
     display: flex;
+    flex-direction: row;
 }
 header h1 {    
     font-size: 36px;
     position: relative;
-    top: -20px;
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul {
     list-style-type: none;
     
 }
-header nav{
+header {
     display: flex;
+    flex-direction: row;
+}
+nav{
+    width: 100%;
+    display: inline;
+}
+nav ul{
+    padding:0;
+    margin: 0;
+ justify-content: end;
+ 
 }
 
 header nav ul li {
+   display: inline;
    position: relative;
     margin-left: 25px;
-    
-    
+   top: -20px;
+    font-size: 20px;
 }
 
 header{
@@ -75,7 +90,7 @@ header{
     grid-area: p1;
     overflow: hidden;
 }
-/* creates the filter, declaration after (line 72) removes the filter on hover */
+/* creates the filter, declaration after removes the filter on hover */
 .pic1, .pic2, .pic3, .pic4, .pic5{
     max-width:100%;
     overflow: hidden;
@@ -163,4 +178,19 @@ ul{
     border-left: 5px solid black;
     padding-left: 20px;
 }
-
+#contact ul{
+    display:flex;
+    justify-content: space-around;
+    
+}
+#contact ul li{
+    position: relative;
+    top: 90px;
+    justify-content: center;
+}
+#contact ul li span{
+    border-bottom: 3px solid blue;
+    text-decoration: none;
+    padding-bottom: 5px;
+    
+}
