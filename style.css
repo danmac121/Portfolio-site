@@ -1,3 +1,70 @@
-*{
-    border: 1px solid red;
+
+/* instead of main, try doing it by individual section, so about me gets this, previous work and contact me. If they each get it, it should fix the issue i'm having. may have to slightly restructure the html  */
+#about-me, #work, #contact{
+    display: grid;
+    grid-template-columns: 1fr  4fr;
+    
+}
+#work{
+    grid-template-columns: 1fr 4fr;
+}
+
+ul li{
+    display: inline-block;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "p1 p1"
+    "p2 p3"
+    "p4 p5";
+   
+}
+
+header{
+    background-color: #00749E;
+    color: #33B8E8;
+    
+   
+
+}
+#p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.p4{
+    grid-area: p4;
+}
+.p5{
+    grid-area: p5;
+}
+ul{
+    display:flex;
+}
+.projects h3{
+    height: 100px;
+    border: 3px solid black;
+    margin: 10px;
+    
+    
+}
+#p1{
+    height:300px;
+}
+#about-me h2, #contact h3, #work h3{
+   
+    border-right: 5px solid black; 
+}
+#about-me, #contact{
+    height: 200px;
+}
+#about-me p, .projects, #contact ul{
+    margin-left:30px;
 }
