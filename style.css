@@ -1,3 +1,7 @@
+:root{
+    --dark: #2a607c;
+    --light: #33B8E8;
+}
 body{
     margin: 0%;
     padding: 0%;
@@ -17,7 +21,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--dark);
 }
 header {
     padding: 20px;
@@ -25,15 +29,17 @@ header {
     height:40px;
     display: flex;
     flex-direction: row;
-    background-color: #33B8E8;
-    color: #00749E;
+    background-color: var(--light);
+    color: var(--dark);
 }
 header h1 {    
     font-size: 36px;
     position: relative;
     display: inline;
-    margin: 0;
-    padding: 0;
+    left: -20px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding-left: 50px;
 }
 
 header nav ul {
@@ -68,7 +74,7 @@ header nav ul li {
 #subtitle{
     height: 150px;
     width: 100%;
-    background-color: #2a607c;
+    background-color: var(--dark);
     display: flex;
     flex-direction: row;
    justify-content: space-between;
@@ -81,8 +87,8 @@ header nav ul li {
     margin:0px;
     align-self: center;
     margin-right: 5%;
-    background-color: #33B8E8;
-    color: black;
+    background-color: var(--light);
+    color: var(--dark);
     padding: 20px;
 }
 #subtitle img{padding-left: 5%;
@@ -148,8 +154,9 @@ header nav ul li {
     top: 230px;
     padding: 0px;
     margin-top: 0px;
-    background-color: #EBAE64;
+    background-color: orange;
     font-size: 24px;
+    color: var(--dark);
 }
 .h4fix{
     z-index: 1;
@@ -158,9 +165,9 @@ header nav ul li {
     top: 60px;
     padding: 0px;
     margin-top: 0px;
-    background-color: #EBAE64;
+    background-color: orange;
     font-size: 18px;
-
+    color: var(--dark);
 }
 
 .projects div{
@@ -175,7 +182,7 @@ header nav ul li {
 }
 #about-me h2, #contact h4, #work h2{
     font-size: 36px;
-     color: #00749E;
+     color: var(--dark);
      margin-left: 90px;
   
  }
@@ -284,16 +291,19 @@ header nav ul li {
         "c3"
         "c4";
     }
-    #c1{grid-area: c1;}
-    #c2{grid-area: c2;}
-    #c3{grid-area: c3;}
-    #c4{grid-area: c4;} */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+     #c1{grid-area: c1;}
+     #c2{grid-area: c2;}
+     #c3{grid-area: c3;}
+     #c4{grid-area: c4;} */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
   }
   #contact li{
-    padding: 0;
-    margin: 0;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+   
   }
   }
