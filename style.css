@@ -13,16 +13,15 @@ body{
     grid-template-columns: 1fr  4fr;
     
 }
-#work{
-    grid-template-columns: 1fr 4fr;
-}
+
 #contact ul li{
     list-style: none;
 }
-a{
+a, #c1{
     text-decoration: none;
     color: var(--dark);
 }
+
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,31 +39,27 @@ header h1 {
     background-color: var(--dark);
     color: var(--light);
     padding:0 10px 0 50px;
-
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
-    
+    padding:0;
+    margin: 0;
+    justify-content: end;  
 }
 
 nav{
     width: 100%;
     display: inline;
 }
-nav ul{
-    padding:0;
-    margin: 0;
-    justify-content: end;
- 
-}
+
 
 header nav ul li {
    display: inline;
    position: relative;
     margin-left: 25px;
-   top: -20px;
+    top: -20px;
     font-size: 20px;
 }
 
@@ -76,8 +71,6 @@ header nav ul li {
     display: flex;
     flex-direction: row;
    justify-content: space-between;
-    
-   
 }
 
 #subtitle span{
@@ -109,6 +102,7 @@ header nav ul li {
 #p1{
     grid-area: p1;
     overflow: hidden;
+    height:300px;
 }
 
 .p2{
@@ -174,10 +168,7 @@ header nav ul li {
     margin: 10px;
     
 }
-#p1{
-    height:300px;
-    
-}
+
 #about-me h2, #contact h4, #work h2{
     font-size: 36px;
      color: var(--dark);
@@ -221,7 +212,7 @@ header nav ul li {
     justify-content: center;
 }
 #contact ul li span{
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid var(--light);
     text-decoration: none;
     padding-bottom: 5px;
     
@@ -243,7 +234,7 @@ header nav ul li {
    
     header{
       
-      height:120px
+      height:100px
     } 
     #about-me p{
         padding-top: 0px;
@@ -300,11 +291,7 @@ header nav ul li {
      #c4{grid-area: c4;}
      
 
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-    position: relative;
-     */
+    
  
   #c1, #c2, #c3, #c4{
     position: inherit;
