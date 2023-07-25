@@ -5,4 +5,4 @@ This is the repo for my portfolio site. I used a combination of CSS grid and Fle
 
 [This is a link to the deployed website](#)
 
-![Here is a screenshot of the site](/assets/images/Screenshot.png)
+![Here is a screenshot of the site](/assets/images/portfolio.png)
