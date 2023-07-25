@@ -39,7 +39,8 @@ header h1 {
     left: -20px;
     background-color: var(--dark);
     color: var(--light);
-    padding-left: 50px;
+    padding:0 10px 0 50px;
+
 }
 
 header nav ul {
@@ -47,10 +48,7 @@ header nav ul {
     display: flex;
     
 }
-header {
-    display: flex;
-    flex-direction: row;
-}
+
 nav{
     width: 100%;
     display: inline;
@@ -244,7 +242,7 @@ header nav ul li {
     }
    
     header{
-      background-color:red;
+      
       height:120px
     } 
     #about-me p{
@@ -261,13 +259,16 @@ header nav ul li {
         "p4" 
         "p5";
         max-width: 80%;
+        
        
     }
+    
+   
   }
   @media screen and (max-width: 767px) {
    
     header{
-      background-color:white;
+    
       height: 100px;
     } 
     header nav ul{
@@ -282,28 +283,40 @@ header nav ul li {
         position: relative;
         bottom: 120px;
     }
+    
     #contact ul {
-        /* display: grid;
+        display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         grid-template-areas: 
         "c1"
         "c2"
         "c3"
         "c4";
+       
     }
      #c1{grid-area: c1;}
      #c2{grid-area: c2;}
      #c3{grid-area: c3;}
-     #c4{grid-area: c4;} */
-        display: flex;
+     #c4{grid-area: c4;}
+     
+
+        /* display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
+    position: relative;
+     */
+ 
+  #c1, #c2, #c3, #c4{
+    position: inherit;
+    top: -85px;
     
-  }
-  #contact li{
-    padding-top: 0px;
-    margin-top: 0px;
     
    
   }
-  }
+  #about-me h2, #contact h4, #work h2{
+    font-size: 36px;
+    
+     margin-left: 30px;
+  
+ }
+}
